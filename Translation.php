@@ -57,4 +57,5 @@ class Translation implements Response {
     }
 }
 
-$translate = new Translation(new TranslationYaApi())
+$translate = new Translation(new TranslationYaApi());
+$translation = $translation->data($this->request>get('text'), $this->request>get('lang'))
