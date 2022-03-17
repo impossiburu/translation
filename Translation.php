@@ -1,3 +1,5 @@
+<?php
+
 class AbstractApi {
     protected function request($url, $params) {
 
